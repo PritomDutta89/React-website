@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: 0 7px 3px -2px rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100vw;
+}
+
+.Navbar img {
+  width: 30px;
+  height: 30px;
+  margin-top: 2vh;
+  margin-left: 8vw;
+}
+.Navbar__input {
+  margin-right: 8vw;
+  margin-top: 1.8vh;
+}
+
+.Navbar__input input {
+  width: 100%;
+  border: 0px solid rgb(245, 243, 243);
+  outline: 0;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 1px 2px 5px 1px rgb(219, 215, 215);
+}
+
+@media screen and (max-width: 1280px) {
+  .Navbar {
+    height: 9.5vh;
+  }
+  .Navbar img {
+    margin-top: 2vh;
+  }
+  .Navbar__input {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Navbar {
+    height: 8.5vh;
+  }
+  .Navbar img {
+    margin-top: 2vh;
+  }
+  .Navbar__input {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .Navbar {
+    height: 8vh;
+  }
+  .Navbar img {
+    margin-top: 2.7vh;
+  }
+  .Navbar__input {
+    margin-top: 2.3vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Navbar {
+    height: 8.5vh;
+  }
+  .Navbar img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5vh;
+  }
+  .Navbar__input {
+    margin-right: 0px;
+    margin-top: 1.7vh;
+  }
+
+  .Navbar__input input {
+    width: 80%;
+    padding: 8px;
+  }
+}
